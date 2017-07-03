@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NBA Player Tracking</title>
+  <style>
+    .court {
+      width: 100%;
+      height: 100%;
+      stroke: black;
+      stroke-width: 3;
+      fill: #fff7e6;
+    }
+
+    .lines {
+      stroke: black;
+      stroke-width: 1;
+      fill: #fff7e6;
+    }
+
+    .node:hover {
+      cursor: pointer;
+    }
+
+    .node {
+      r: 15;
+      stroke: black;
+    }
+
+    .jersey {
+      fill: white;
+    }
+
+    .jersey:hover {
+      cursor: pointer;
+    }
+
+    #timeline {
+      width: 940px;
+    }
+  </style>
+</head>
+<body>
+  <p>Scroll over court to scrub the play.  Hovering over players will show their info.</p>
+  <div id="chart"></div>
+  <input id="timeline" value="0" type="range" name="timeline">
+  <div id="hover-info">
+    <span id="picture"></span>
+    <span id="firstname">test</span>
+    <span id="lastname">test</span>
+    <span id="position">test</span>
+  </div>
+</body>
+<script type="text/javascript" src="bundle.js"></script>
+</html>
